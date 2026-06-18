@@ -1,0 +1,5 @@
+pdf2image
+pytesseract
+pillow
+pdfkit
+jinja2

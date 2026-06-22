@@ -1,8 +1,15 @@
-.venv/
 .git/
+.venv/
+.venv-1/
 __pycache__/
 *.pyc
 *.pyo
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+tests/
 data/output/
 logs/
 *.log
+self_assessment_v2.html

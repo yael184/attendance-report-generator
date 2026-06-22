@@ -1752,3 +1752,467 @@ ValueError: could not convert string to float: '11:08'
 2026-06-18 02:08:23 - attendance_app.__main__ - INFO - [main.py:127] - ============================================================
 2026-06-18 02:08:23 - attendance_app.__main__ - INFO - [main.py:128] - All files processed
 2026-06-18 02:08:23 - attendance_app.__main__ - INFO - [main.py:129] - ============================================================
+2026-06-22 10:50:46 - attendance_report.cli - INFO - [cli.py:102] - ============================================================
+2026-06-22 10:50:46 - attendance_report.cli - INFO - [cli.py:103] - Attendance Report Generator
+2026-06-22 10:50:46 - attendance_report.cli - INFO - [cli.py:104] - ============================================================
+2026-06-22 10:50:46 - attendance_report.cli - INFO - [cli.py:118] - All files processed
+2026-06-22 10:50:46 - attendance_report.cli - INFO - [cli.py:102] - ============================================================
+2026-06-22 10:50:46 - attendance_report.cli - INFO - [cli.py:103] - Attendance Report Generator
+2026-06-22 10:50:46 - attendance_report.cli - INFO - [cli.py:104] - ============================================================
+2026-06-22 10:50:46 - attendance_report.cli - ERROR - [cli.py:109] - Input file not found: C:\Users\TZADY\AppData\Local\Temp\pytest-of-TZADY\pytest-0\test_missing_file_returns_erro0\nope.pdf
+2026-06-22 10:50:46 - attendance_report.cli - INFO - [cli.py:102] - ============================================================
+2026-06-22 10:50:46 - attendance_report.cli - INFO - [cli.py:103] - Attendance Report Generator
+2026-06-22 10:50:46 - attendance_report.cli - INFO - [cli.py:104] - ============================================================
+2026-06-22 10:50:46 - attendance_report.cli - INFO - [cli.py:83] - Found 2 PDF file(s)
+2026-06-22 10:50:46 - attendance_report.cli - INFO - [cli.py:118] - All files processed
+2026-06-22 10:50:46 - attendance_report.cli - INFO - [cli.py:102] - ============================================================
+2026-06-22 10:50:46 - attendance_report.cli - INFO - [cli.py:103] - Attendance Report Generator
+2026-06-22 10:50:46 - attendance_report.cli - INFO - [cli.py:104] - ============================================================
+2026-06-22 10:50:46 - attendance_report.cli - WARNING - [cli.py:81] - No PDF files found in C:\Users\TZADY\AppData\Local\Temp\pytest-of-TZADY\pytest-0\test_batch_mode_no_files0\empty
+2026-06-22 10:50:46 - attendance_report.cli - INFO - [cli.py:118] - All files processed
+2026-06-22 10:50:46 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser EagleReportParser
+2026-06-22 10:50:46 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser MonthlyCardParser
+2026-06-22 10:50:46 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser EagleReportParser
+2026-06-22 10:50:46 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser EagleReportParser
+2026-06-22 10:50:46 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:53] - Parsing report as TYPE_A
+2026-06-22 10:50:46 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:66] - TYPE_A produced 3 row(s)
+2026-06-22 10:50:46 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:53] - Parsing report as TYPE_B
+2026-06-22 10:50:46 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:66] - TYPE_B produced 2 row(s)
+2026-06-22 10:50:46 - attendance_report.application.service - WARNING - [service.py:42] - No strategy for 'TYPE_X' — returning rows unchanged
+2026-06-22 10:50:46 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [01/05/2024]: 08:00->08:04, 17:00->16:56, total=8.87
+2026-06-22 10:50:46 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [01/05/2024]: 08:00->08:04, 17:00->16:56, total=8.87
+2026-06-22 10:50:46 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [01/05/2024]: 08:00->08:03, 17:00->16:59, total=8.93
+2026-06-22 10:50:46 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [01/05/2024]: 08:00->08:03, 17:00->16:59, total=8.93
+2026-06-22 10:50:46 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [01/05/2024]: 08:00->08:03, 17:00->16:59, total=8.93
+2026-06-22 10:50:46 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [15/06/2024]: 08:00->08:00, 17:00->16:59, total=8.98
+2026-06-22 10:50:46 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [01/05/2024]: 07:00->07:02, 19:00->18:55, total=11.88, 125%=2.0
+2026-06-22 10:52:47 - attendance_report.cli - INFO - [cli.py:102] - ============================================================
+2026-06-22 10:52:47 - attendance_report.cli - INFO - [cli.py:103] - Attendance Report Generator
+2026-06-22 10:52:47 - attendance_report.cli - INFO - [cli.py:104] - ============================================================
+2026-06-22 10:52:47 - attendance_report.cli - INFO - [cli.py:83] - Found 4 PDF file(s)
+2026-06-22 10:52:47 - attendance_report.application.pipeline - INFO - [pipeline.py:38] - Processing: a_r_25.pdf
+2026-06-22 10:52:47 - attendance_report.application.pipeline - INFO - [pipeline.py:41] - [1/4] OCR — extracting text
+2026-06-22 10:52:47 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:46] - Starting OCR for: a_r_25.pdf
+2026-06-22 10:52:49 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:49] - Converted PDF to 1 page(s)
+2026-06-22 10:52:49 - pytesseract - DEBUG - [pytesseract.py:272] - ['tesseract', 'C:\\Users\\TZADY\\AppData\\Local\\Temp\\tess_1qnlsk_b_input.PNG', 'C:\\Users\\TZADY\\AppData\\Local\\Temp\\tess_1qnlsk_b', '-l', 'heb+eng', '--psm', '6', 'txt']
+2026-06-22 10:52:52 - attendance_report.infrastructure.ocr_service - DEBUG - [ocr_service.py:57] - Page 1: 1181 chars
+2026-06-22 10:52:52 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:61] - OCR complete: 1197 chars
+2026-06-22 10:52:52 - attendance_report.application.pipeline - INFO - [pipeline.py:44] - [2/4] Identifying report type and parsing
+2026-06-22 10:52:52 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser EagleReportParser
+2026-06-22 10:52:52 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:53] - Parsing report as TYPE_A
+2026-06-22 10:52:52 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:66] - TYPE_A produced 4 row(s)
+2026-06-22 10:52:52 - attendance_report.application.pipeline - INFO - [pipeline.py:47] - Parsed 4 row(s) as TYPE_A
+2026-06-22 10:52:52 - attendance_report.application.pipeline - INFO - [pipeline.py:49] - [3/4] Transforming with validation
+2026-06-22 10:52:52 - attendance_report.application.observers - INFO - [observers.py:40] - Transforming 4 row(s) as TYPE_A
+2026-06-22 10:52:52 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [13/02/2023]: 00:00->00:01, 00:00->23:59, total=23.97
+2026-06-22 10:52:52 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 13/02/2023: entry 00:01 outside [05:00, 11:00] on 13/02/2023 — keeping original
+2026-06-22 10:52:52 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [14/02/2023]: 00:00->00:00, 00:00->23:57, total=23.95
+2026-06-22 10:52:52 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 14/02/2023: entry 00:00 outside [05:00, 11:00] on 14/02/2023 — keeping original
+2026-06-22 10:52:52 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [16/02/2023]: 00:00->00:06, 00:00->00:00, total=0.0
+2026-06-22 10:52:52 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 16/02/2023: exit 00:00 not after entry 00:06 on 16/02/2023 — keeping original
+2026-06-22 10:52:52 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [20/02/2023]: 00:00->00:06, 00:00->23:58, total=23.87
+2026-06-22 10:52:52 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 20/02/2023: entry 00:06 outside [05:00, 11:00] on 20/02/2023 — keeping original
+2026-06-22 10:52:52 - attendance_report.application.observers - INFO - [observers.py:58] - Transformation complete: 4 row(s)
+2026-06-22 10:52:52 - attendance_report.application.pipeline - INFO - [pipeline.py:53] - [4/4] Rendering output PDF
+2026-06-22 10:52:52 - attendance_report.infrastructure.pdf_generator - INFO - [pdf_generator.py:58] - Generating PDF for TYPE_A -> data/output\modified_a_r_25.pdf
+2026-06-22 10:52:53 - attendance_report.infrastructure.pdf_generator - INFO - [pdf_generator.py:78] - PDF generated: data/output\modified_a_r_25.pdf
+2026-06-22 10:52:53 - attendance_report.application.pipeline - INFO - [pipeline.py:63] - Done -> data/output\modified_a_r_25.pdf
+2026-06-22 10:52:53 - attendance_report.application.pipeline - INFO - [pipeline.py:38] - Processing: a_r_9.pdf
+2026-06-22 10:52:53 - attendance_report.application.pipeline - INFO - [pipeline.py:41] - [1/4] OCR — extracting text
+2026-06-22 10:52:53 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:46] - Starting OCR for: a_r_9.pdf
+2026-06-22 10:52:54 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:49] - Converted PDF to 1 page(s)
+2026-06-22 10:52:55 - pytesseract - DEBUG - [pytesseract.py:272] - ['tesseract', 'C:\\Users\\TZADY\\AppData\\Local\\Temp\\tess_v2jmbdx5_input.PNG', 'C:\\Users\\TZADY\\AppData\\Local\\Temp\\tess_v2jmbdx5', '-l', 'heb+eng', '--psm', '6', 'txt']
+2026-06-22 10:52:58 - attendance_report.infrastructure.ocr_service - DEBUG - [ocr_service.py:57] - Page 1: 1729 chars
+2026-06-22 10:52:58 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:61] - OCR complete: 1745 chars
+2026-06-22 10:52:58 - attendance_report.application.pipeline - INFO - [pipeline.py:44] - [2/4] Identifying report type and parsing
+2026-06-22 10:52:58 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser EagleReportParser
+2026-06-22 10:52:58 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:53] - Parsing report as TYPE_A
+2026-06-22 10:52:58 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:66] - TYPE_A produced 13 row(s)
+2026-06-22 10:52:58 - attendance_report.application.pipeline - INFO - [pipeline.py:47] - Parsed 13 row(s) as TYPE_A
+2026-06-22 10:52:58 - attendance_report.application.pipeline - INFO - [pipeline.py:49] - [3/4] Transforming with validation
+2026-06-22 10:52:58 - attendance_report.application.observers - INFO - [observers.py:40] - Transforming 13 row(s) as TYPE_A
+2026-06-22 10:52:58 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [08/10/2022]: 08:00->08:04, 15:00->14:58, total=6.9
+2026-06-22 10:52:58 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 08/10/2022: 08:00-15:00 -> 08:04-14:58
+2026-06-22 10:52:58 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [14/10/2022]: 08:00->08:00, 15:00->14:57, total=6.95
+2026-06-22 10:52:58 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 14/10/2022: 08:00-15:00 -> 08:00-14:57
+2026-06-22 10:52:58 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [15/10/2022]: 08:00->08:01, 15:00->14:56, total=6.92
+2026-06-22 10:52:58 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 15/10/2022: 08:00-15:00 -> 08:01-14:56
+2026-06-22 10:52:58 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [17/10/2022]: 08:00->08:07, 15:00->15:00, total=6.88
+2026-06-22 10:52:58 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 17/10/2022: 08:00-15:00 -> 08:07-15:00
+2026-06-22 10:52:58 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [18/10/2022]: 08:00->08:02, 15:00->15:00, total=6.97
+2026-06-22 10:52:58 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 18/10/2022: 08:00-15:00 -> 08:02-15:00
+2026-06-22 10:52:58 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [20/10/2022]: 08:00->08:06, 15:00->15:00, total=6.9
+2026-06-22 10:52:58 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 20/10/2022: 08:00-15:00 -> 08:06-15:00
+2026-06-22 10:52:58 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [21/10/2022]: 08:00->08:01, 15:00->14:57, total=6.93
+2026-06-22 10:52:58 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 21/10/2022: 08:00-15:00 -> 08:01-14:57
+2026-06-22 10:52:58 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [22/10/2022]: 09:00->09:01, 16:00->15:59, total=6.97
+2026-06-22 10:52:58 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 22/10/2022: 09:00-16:00 -> 09:01-15:59
+2026-06-22 10:52:58 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [23/10/2022]: 08:00->08:07, 15:00->14:56, total=6.82
+2026-06-22 10:52:58 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 23/10/2022: 08:00-15:00 -> 08:07-14:56
+2026-06-22 10:52:58 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [25/10/2022]: 08:00->08:02, 15:00->14:56, total=6.9
+2026-06-22 10:52:58 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 25/10/2022: 08:00-15:00 -> 08:02-14:56
+2026-06-22 10:52:58 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [27/10/2022]: 08:00->08:07, 15:00->14:58, total=6.85
+2026-06-22 10:52:58 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 27/10/2022: 08:00-15:00 -> 08:07-14:58
+2026-06-22 10:52:58 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [28/10/2022]: 08:00->08:00, 15:00->14:56, total=6.93
+2026-06-22 10:52:58 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 28/10/2022: 08:00-15:00 -> 08:00-14:56
+2026-06-22 10:52:58 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [31/10/2022]: 08:00->08:03, 15:00->14:57, total=6.9
+2026-06-22 10:52:58 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 31/10/2022: 08:00-15:00 -> 08:03-14:57
+2026-06-22 10:52:58 - attendance_report.application.observers - INFO - [observers.py:58] - Transformation complete: 13 row(s)
+2026-06-22 10:52:58 - attendance_report.application.pipeline - INFO - [pipeline.py:53] - [4/4] Rendering output PDF
+2026-06-22 10:52:58 - attendance_report.infrastructure.pdf_generator - INFO - [pdf_generator.py:58] - Generating PDF for TYPE_A -> data/output\modified_a_r_9.pdf
+2026-06-22 10:52:59 - attendance_report.infrastructure.pdf_generator - INFO - [pdf_generator.py:78] - PDF generated: data/output\modified_a_r_9.pdf
+2026-06-22 10:52:59 - attendance_report.application.pipeline - INFO - [pipeline.py:63] - Done -> data/output\modified_a_r_9.pdf
+2026-06-22 10:52:59 - attendance_report.application.pipeline - INFO - [pipeline.py:38] - Processing: n_r_10_n.pdf
+2026-06-22 10:52:59 - attendance_report.application.pipeline - INFO - [pipeline.py:41] - [1/4] OCR — extracting text
+2026-06-22 10:52:59 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:46] - Starting OCR for: n_r_10_n.pdf
+2026-06-22 10:53:01 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:49] - Converted PDF to 1 page(s)
+2026-06-22 10:53:01 - pytesseract - DEBUG - [pytesseract.py:272] - ['tesseract', 'C:\\Users\\TZADY\\AppData\\Local\\Temp\\tess__ask7jhx_input.PNG', 'C:\\Users\\TZADY\\AppData\\Local\\Temp\\tess__ask7jhx', '-l', 'heb+eng', '--psm', '6', 'txt']
+2026-06-22 10:53:06 - attendance_report.infrastructure.ocr_service - DEBUG - [ocr_service.py:57] - Page 1: 1091 chars
+2026-06-22 10:53:06 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:61] - OCR complete: 1107 chars
+2026-06-22 10:53:06 - attendance_report.application.pipeline - INFO - [pipeline.py:44] - [2/4] Identifying report type and parsing
+2026-06-22 10:53:06 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser MonthlyCardParser
+2026-06-22 10:53:06 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:53] - Parsing report as TYPE_B
+2026-06-22 10:53:06 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:66] - TYPE_B produced 13 row(s)
+2026-06-22 10:53:06 - attendance_report.application.pipeline - INFO - [pipeline.py:47] - Parsed 13 row(s) as TYPE_B
+2026-06-22 10:53:06 - attendance_report.application.pipeline - INFO - [pipeline.py:49] - [3/4] Transforming with validation
+2026-06-22 10:53:06 - attendance_report.application.observers - INFO - [observers.py:40] - Transforming 13 row(s) as TYPE_B
+2026-06-22 10:53:06 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [20/23]: 08:03->08:06, 11:03->11:03, total=2.95, 125%=0.0
+2026-06-22 10:53:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 20/23: exit 11:03 outside [13:00, 23:59] on 20/23 — keeping original
+2026-06-22 10:53:06 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [31/23]: 08:04->08:04, 10:57->10:54, total=2.83, 125%=0.0
+2026-06-22 10:53:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 31/23: exit 10:54 outside [13:00, 23:59] on 31/23 — keeping original
+2026-06-22 10:53:06 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [4/1/23]: 08:01->08:04, 10:59->10:56, total=2.87, 125%=0.0
+2026-06-22 10:53:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 4/1/23: exit 10:56 outside [13:00, 23:59] on 4/1/23 — keeping original
+2026-06-22 10:53:06 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [40/1/23]: 08:03->08:06, 11:01->10:55, total=2.82, 125%=0.0
+2026-06-22 10:53:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 40/1/23: exit 10:55 outside [13:00, 23:59] on 40/1/23 — keeping original
+2026-06-22 10:53:06 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [14/1/23]: 08:00->08:02, 11:02->11:00, total=2.97, 125%=0.0
+2026-06-22 10:53:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 14/1/23: exit 11:00 outside [13:00, 23:59] on 14/1/23 — keeping original
+2026-06-22 10:53:06 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [68/23]: 08:02->08:05, 11:08->11:03, total=2.97, 125%=0.0
+2026-06-22 10:53:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 68/23: exit 11:03 outside [13:00, 23:59] on 68/23 — keeping original
+2026-06-22 10:53:06 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [17/1/23]: 08:00->08:01, 11:01->10:59, total=2.97, 125%=0.0
+2026-06-22 10:53:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 17/1/23: exit 10:59 outside [13:00, 23:59] on 17/1/23 — keeping original
+2026-06-22 10:53:06 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [18/1/23]: 08:01->08:01, 11:02->10:57, total=2.93, 125%=0.0
+2026-06-22 10:53:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 18/1/23: exit 10:57 outside [13:00, 23:59] on 18/1/23 — keeping original
+2026-06-22 10:53:06 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [19/1/23]: 08:06->08:09, 11:02->11:02, total=2.88, 125%=0.0
+2026-06-22 10:53:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 19/1/23: exit 11:02 outside [13:00, 23:59] on 19/1/23 — keeping original
+2026-06-22 10:53:06 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [22/1/23]: 08:02->08:03, 11:03->10:57, total=2.9, 125%=0.0
+2026-06-22 10:53:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 22/1/23: exit 10:57 outside [13:00, 23:59] on 22/1/23 — keeping original
+2026-06-22 10:53:06 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [26/1/23]: 08:02->08:04, 11:00->10:58, total=2.9, 125%=0.0
+2026-06-22 10:53:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 26/1/23: exit 10:58 outside [13:00, 23:59] on 26/1/23 — keeping original
+2026-06-22 10:53:06 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [29/0/23]: 08:01->08:01, 11:03->10:59, total=2.97, 125%=0.0
+2026-06-22 10:53:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 29/0/23: exit 10:59 outside [13:00, 23:59] on 29/0/23 — keeping original
+2026-06-22 10:53:06 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [00/23]: 08:00->08:04, 01:10->01:06, total=0.0, 125%=0.0
+2026-06-22 10:53:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 00/23: exit 01:06 not after entry 08:04 on 00/23 — keeping original
+2026-06-22 10:53:06 - attendance_report.application.observers - INFO - [observers.py:58] - Transformation complete: 13 row(s)
+2026-06-22 10:53:06 - attendance_report.application.pipeline - INFO - [pipeline.py:53] - [4/4] Rendering output PDF
+2026-06-22 10:53:06 - attendance_report.infrastructure.pdf_generator - INFO - [pdf_generator.py:58] - Generating PDF for TYPE_B -> data/output\modified_n_r_10_n.pdf
+2026-06-22 10:53:07 - attendance_report.infrastructure.pdf_generator - INFO - [pdf_generator.py:78] - PDF generated: data/output\modified_n_r_10_n.pdf
+2026-06-22 10:53:07 - attendance_report.application.pipeline - INFO - [pipeline.py:63] - Done -> data/output\modified_n_r_10_n.pdf
+2026-06-22 10:53:07 - attendance_report.application.pipeline - INFO - [pipeline.py:38] - Processing: n_r_5_n.pdf
+2026-06-22 10:53:07 - attendance_report.application.pipeline - INFO - [pipeline.py:41] - [1/4] OCR — extracting text
+2026-06-22 10:53:07 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:46] - Starting OCR for: n_r_5_n.pdf
+2026-06-22 10:53:08 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:49] - Converted PDF to 1 page(s)
+2026-06-22 10:53:08 - pytesseract - DEBUG - [pytesseract.py:272] - ['tesseract', 'C:\\Users\\TZADY\\AppData\\Local\\Temp\\tess_0vmsc1wm_input.PNG', 'C:\\Users\\TZADY\\AppData\\Local\\Temp\\tess_0vmsc1wm', '-l', 'heb+eng', '--psm', '6', 'txt']
+2026-06-22 10:53:12 - attendance_report.infrastructure.ocr_service - DEBUG - [ocr_service.py:57] - Page 1: 1160 chars
+2026-06-22 10:53:12 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:61] - OCR complete: 1176 chars
+2026-06-22 10:53:12 - attendance_report.application.pipeline - INFO - [pipeline.py:44] - [2/4] Identifying report type and parsing
+2026-06-22 10:53:12 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser MonthlyCardParser
+2026-06-22 10:53:12 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:53] - Parsing report as TYPE_B
+2026-06-22 10:53:12 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:66] - TYPE_B produced 20 row(s)
+2026-06-22 10:53:12 - attendance_report.application.pipeline - INFO - [pipeline.py:47] - Parsed 20 row(s) as TYPE_B
+2026-06-22 10:53:12 - attendance_report.application.pipeline - INFO - [pipeline.py:49] - [3/4] Transforming with validation
+2026-06-22 10:53:12 - attendance_report.application.observers - INFO - [observers.py:40] - Transforming 20 row(s) as TYPE_B
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [1/9/22]: 08:30->08:31, 12:00->11:54, total=3.38, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 1/9/22: exit 11:54 outside [13:00, 23:59] on 1/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [2/9/22]: 08:30->08:34, 12:00->11:55, total=3.35, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 2/9/22: exit 11:55 outside [13:00, 23:59] on 2/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [6/9/22]: 08:30->08:33, 12:00->11:57, total=3.4, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 6/9/22: exit 11:57 outside [13:00, 23:59] on 6/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [7/9/22]: 08:30->08:31, 12:00->11:55, total=3.4, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 7/9/22: exit 11:55 outside [13:00, 23:59] on 7/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [9/9/22]: 08:30->08:32, 12:00->11:57, total=3.42, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 9/9/22: exit 11:57 outside [13:00, 23:59] on 9/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [11/9/22]: 08:30->08:33, 12:00->11:59, total=3.43, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 11/9/22: exit 11:59 outside [13:00, 23:59] on 11/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [12/9/22]: 08:30->08:33, 12:00->11:56, total=3.38, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 12/9/22: exit 11:56 outside [13:00, 23:59] on 12/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [13/9/22]: 08:30->08:35, 12:00->11:58, total=3.38, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 13/9/22: exit 11:58 outside [13:00, 23:59] on 13/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [14/9/22]: 05:50->05:55, 12:00->12:00, total=6.08, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 14/9/22: exit 12:00 outside [13:00, 23:59] on 14/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [15/9/22]: 08:30->08:35, 12:00->11:59, total=3.4, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 15/9/22: exit 11:59 outside [13:00, 23:59] on 15/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [16/9/22]: 08:30->08:35, 12:00->11:55, total=3.33, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 16/9/22: exit 11:55 outside [13:00, 23:59] on 16/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [18/9/22]: 08:30->08:30, 12:00->11:55, total=3.42, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 18/9/22: exit 11:55 outside [13:00, 23:59] on 18/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [19/9/22]: 03:50->03:52, 12:00->11:56, total=8.07, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 19/9/22: entry 03:52 outside [05:00, 11:00] on 19/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [20/9/22]: 08:30->08:32, 12:00->11:57, total=3.42, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 20/9/22: exit 11:57 outside [13:00, 23:59] on 20/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [21/9/22]: 08:30->08:32, 12:00->11:57, total=3.42, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 21/9/22: exit 11:57 outside [13:00, 23:59] on 21/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [22/9/22]: 08:30->08:34, 12:00->11:56, total=3.37, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 22/9/22: exit 11:56 outside [13:00, 23:59] on 22/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [23/9/22]: 08:30->08:35, 12:00->11:56, total=3.35, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 23/9/22: exit 11:56 outside [13:00, 23:59] on 23/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [25/9/22]: 08:30->08:31, 12:00->11:56, total=3.42, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 25/9/22: exit 11:56 outside [13:00, 23:59] on 25/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [28/9/22]: 08:30->08:35, 12:00->11:56, total=3.35, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 28/9/22: exit 11:56 outside [13:00, 23:59] on 28/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [30/9/22]: 08:30->08:31, 12:00->11:57, total=3.43, 125%=0.0
+2026-06-22 10:53:12 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 30/9/22: exit 11:57 outside [13:00, 23:59] on 30/9/22 — keeping original
+2026-06-22 10:53:12 - attendance_report.application.observers - INFO - [observers.py:58] - Transformation complete: 20 row(s)
+2026-06-22 10:53:12 - attendance_report.application.pipeline - INFO - [pipeline.py:53] - [4/4] Rendering output PDF
+2026-06-22 10:53:12 - attendance_report.infrastructure.pdf_generator - INFO - [pdf_generator.py:58] - Generating PDF for TYPE_B -> data/output\modified_n_r_5_n.pdf
+2026-06-22 10:53:13 - attendance_report.infrastructure.pdf_generator - INFO - [pdf_generator.py:78] - PDF generated: data/output\modified_n_r_5_n.pdf
+2026-06-22 10:53:13 - attendance_report.application.pipeline - INFO - [pipeline.py:63] - Done -> data/output\modified_n_r_5_n.pdf
+2026-06-22 10:53:13 - attendance_report.cli - INFO - [cli.py:118] - All files processed
+2026-06-22 10:55:01 - attendance_report.cli - INFO - [cli.py:102] - ============================================================
+2026-06-22 10:55:01 - attendance_report.cli - INFO - [cli.py:103] - Attendance Report Generator
+2026-06-22 10:55:01 - attendance_report.cli - INFO - [cli.py:104] - ============================================================
+2026-06-22 10:55:01 - attendance_report.cli - INFO - [cli.py:83] - Found 4 PDF file(s)
+2026-06-22 10:55:01 - attendance_report.application.pipeline - INFO - [pipeline.py:38] - Processing: a_r_25.pdf
+2026-06-22 10:55:01 - attendance_report.application.pipeline - INFO - [pipeline.py:41] - [1/4] OCR — extracting text
+2026-06-22 10:55:01 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:46] - Starting OCR for: a_r_25.pdf
+2026-06-22 10:55:03 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:49] - Converted PDF to 1 page(s)
+2026-06-22 10:55:03 - pytesseract - DEBUG - [pytesseract.py:272] - ['tesseract', 'C:\\Users\\TZADY\\AppData\\Local\\Temp\\tess_ubgj0g3r_input.PNG', 'C:\\Users\\TZADY\\AppData\\Local\\Temp\\tess_ubgj0g3r', '-l', 'heb+eng', '--psm', '6', 'txt']
+2026-06-22 10:55:06 - attendance_report.infrastructure.ocr_service - DEBUG - [ocr_service.py:57] - Page 1: 1181 chars
+2026-06-22 10:55:06 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:61] - OCR complete: 1197 chars
+2026-06-22 10:55:06 - attendance_report.application.pipeline - INFO - [pipeline.py:44] - [2/4] Identifying report type and parsing
+2026-06-22 10:55:06 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser EagleReportParser
+2026-06-22 10:55:06 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:53] - Parsing report as TYPE_A
+2026-06-22 10:55:06 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:66] - TYPE_A produced 4 row(s)
+2026-06-22 10:55:06 - attendance_report.application.pipeline - INFO - [pipeline.py:47] - Parsed 4 row(s) as TYPE_A
+2026-06-22 10:55:06 - attendance_report.application.pipeline - INFO - [pipeline.py:49] - [3/4] Transforming with validation
+2026-06-22 10:55:06 - attendance_report.application.observers - INFO - [observers.py:40] - Transforming 4 row(s) as TYPE_A
+2026-06-22 10:55:06 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [13/02/2023]: 00:00->00:01, 00:00->23:59, total=23.97
+2026-06-22 10:55:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 13/02/2023: entry 00:01 outside [05:00, 11:00] on 13/02/2023 — keeping original
+2026-06-22 10:55:06 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [14/02/2023]: 00:00->00:00, 00:00->23:57, total=23.95
+2026-06-22 10:55:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 14/02/2023: entry 00:00 outside [05:00, 11:00] on 14/02/2023 — keeping original
+2026-06-22 10:55:06 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [16/02/2023]: 00:00->00:06, 00:00->00:00, total=0.0
+2026-06-22 10:55:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 16/02/2023: exit 00:00 not after entry 00:06 on 16/02/2023 — keeping original
+2026-06-22 10:55:06 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [20/02/2023]: 00:00->00:06, 00:00->23:58, total=23.87
+2026-06-22 10:55:06 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 20/02/2023: entry 00:06 outside [05:00, 11:00] on 20/02/2023 — keeping original
+2026-06-22 10:55:06 - attendance_report.application.observers - INFO - [observers.py:58] - Transformation complete: 4 row(s)
+2026-06-22 10:55:06 - attendance_report.application.pipeline - INFO - [pipeline.py:53] - [4/4] Rendering output PDF
+2026-06-22 10:55:06 - attendance_report.infrastructure.pdf_generator - INFO - [pdf_generator.py:58] - Generating PDF for TYPE_A -> data/output\modified_a_r_25.pdf
+2026-06-22 10:55:07 - attendance_report.infrastructure.pdf_generator - INFO - [pdf_generator.py:78] - PDF generated: data/output\modified_a_r_25.pdf
+2026-06-22 10:55:07 - attendance_report.application.pipeline - INFO - [pipeline.py:63] - Done -> data/output\modified_a_r_25.pdf
+2026-06-22 10:55:07 - attendance_report.application.pipeline - INFO - [pipeline.py:38] - Processing: a_r_9.pdf
+2026-06-22 10:55:07 - attendance_report.application.pipeline - INFO - [pipeline.py:41] - [1/4] OCR — extracting text
+2026-06-22 10:55:07 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:46] - Starting OCR for: a_r_9.pdf
+2026-06-22 10:55:08 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:49] - Converted PDF to 1 page(s)
+2026-06-22 10:55:08 - pytesseract - DEBUG - [pytesseract.py:272] - ['tesseract', 'C:\\Users\\TZADY\\AppData\\Local\\Temp\\tess_qybxi80a_input.PNG', 'C:\\Users\\TZADY\\AppData\\Local\\Temp\\tess_qybxi80a', '-l', 'heb+eng', '--psm', '6', 'txt']
+2026-06-22 10:55:12 - attendance_report.infrastructure.ocr_service - DEBUG - [ocr_service.py:57] - Page 1: 1729 chars
+2026-06-22 10:55:12 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:61] - OCR complete: 1745 chars
+2026-06-22 10:55:12 - attendance_report.application.pipeline - INFO - [pipeline.py:44] - [2/4] Identifying report type and parsing
+2026-06-22 10:55:12 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser EagleReportParser
+2026-06-22 10:55:12 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:53] - Parsing report as TYPE_A
+2026-06-22 10:55:12 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:66] - TYPE_A produced 13 row(s)
+2026-06-22 10:55:12 - attendance_report.application.pipeline - INFO - [pipeline.py:47] - Parsed 13 row(s) as TYPE_A
+2026-06-22 10:55:12 - attendance_report.application.pipeline - INFO - [pipeline.py:49] - [3/4] Transforming with validation
+2026-06-22 10:55:12 - attendance_report.application.observers - INFO - [observers.py:40] - Transforming 13 row(s) as TYPE_A
+2026-06-22 10:55:12 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [08/10/2022]: 08:00->08:04, 15:00->14:58, total=6.9
+2026-06-22 10:55:12 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 08/10/2022: 08:00-15:00 -> 08:04-14:58
+2026-06-22 10:55:12 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [14/10/2022]: 08:00->08:00, 15:00->14:57, total=6.95
+2026-06-22 10:55:12 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 14/10/2022: 08:00-15:00 -> 08:00-14:57
+2026-06-22 10:55:12 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [15/10/2022]: 08:00->08:01, 15:00->14:56, total=6.92
+2026-06-22 10:55:12 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 15/10/2022: 08:00-15:00 -> 08:01-14:56
+2026-06-22 10:55:12 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [17/10/2022]: 08:00->08:07, 15:00->15:00, total=6.88
+2026-06-22 10:55:12 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 17/10/2022: 08:00-15:00 -> 08:07-15:00
+2026-06-22 10:55:12 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [18/10/2022]: 08:00->08:02, 15:00->15:00, total=6.97
+2026-06-22 10:55:12 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 18/10/2022: 08:00-15:00 -> 08:02-15:00
+2026-06-22 10:55:12 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [20/10/2022]: 08:00->08:06, 15:00->15:00, total=6.9
+2026-06-22 10:55:12 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 20/10/2022: 08:00-15:00 -> 08:06-15:00
+2026-06-22 10:55:12 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [21/10/2022]: 08:00->08:01, 15:00->14:57, total=6.93
+2026-06-22 10:55:12 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 21/10/2022: 08:00-15:00 -> 08:01-14:57
+2026-06-22 10:55:12 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [22/10/2022]: 09:00->09:01, 16:00->15:59, total=6.97
+2026-06-22 10:55:12 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 22/10/2022: 09:00-16:00 -> 09:01-15:59
+2026-06-22 10:55:12 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [23/10/2022]: 08:00->08:07, 15:00->14:56, total=6.82
+2026-06-22 10:55:12 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 23/10/2022: 08:00-15:00 -> 08:07-14:56
+2026-06-22 10:55:12 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [25/10/2022]: 08:00->08:02, 15:00->14:56, total=6.9
+2026-06-22 10:55:12 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 25/10/2022: 08:00-15:00 -> 08:02-14:56
+2026-06-22 10:55:12 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [27/10/2022]: 08:00->08:07, 15:00->14:58, total=6.85
+2026-06-22 10:55:12 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 27/10/2022: 08:00-15:00 -> 08:07-14:58
+2026-06-22 10:55:12 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [28/10/2022]: 08:00->08:00, 15:00->14:56, total=6.93
+2026-06-22 10:55:12 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 28/10/2022: 08:00-15:00 -> 08:00-14:56
+2026-06-22 10:55:12 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [31/10/2022]: 08:00->08:03, 15:00->14:57, total=6.9
+2026-06-22 10:55:12 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 31/10/2022: 08:00-15:00 -> 08:03-14:57
+2026-06-22 10:55:12 - attendance_report.application.observers - INFO - [observers.py:58] - Transformation complete: 13 row(s)
+2026-06-22 10:55:12 - attendance_report.application.pipeline - INFO - [pipeline.py:53] - [4/4] Rendering output PDF
+2026-06-22 10:55:12 - attendance_report.infrastructure.pdf_generator - INFO - [pdf_generator.py:58] - Generating PDF for TYPE_A -> data/output\modified_a_r_9.pdf
+2026-06-22 10:55:13 - attendance_report.infrastructure.pdf_generator - INFO - [pdf_generator.py:78] - PDF generated: data/output\modified_a_r_9.pdf
+2026-06-22 10:55:13 - attendance_report.application.pipeline - INFO - [pipeline.py:63] - Done -> data/output\modified_a_r_9.pdf
+2026-06-22 10:55:13 - attendance_report.application.pipeline - INFO - [pipeline.py:38] - Processing: n_r_10_n.pdf
+2026-06-22 10:55:13 - attendance_report.application.pipeline - INFO - [pipeline.py:41] - [1/4] OCR — extracting text
+2026-06-22 10:55:13 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:46] - Starting OCR for: n_r_10_n.pdf
+2026-06-22 10:55:14 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:49] - Converted PDF to 1 page(s)
+2026-06-22 10:55:15 - pytesseract - DEBUG - [pytesseract.py:272] - ['tesseract', 'C:\\Users\\TZADY\\AppData\\Local\\Temp\\tess_jxw0mk55_input.PNG', 'C:\\Users\\TZADY\\AppData\\Local\\Temp\\tess_jxw0mk55', '-l', 'heb+eng', '--psm', '6', 'txt']
+2026-06-22 10:55:19 - attendance_report.infrastructure.ocr_service - DEBUG - [ocr_service.py:57] - Page 1: 1091 chars
+2026-06-22 10:55:19 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:61] - OCR complete: 1107 chars
+2026-06-22 10:55:19 - attendance_report.application.pipeline - INFO - [pipeline.py:44] - [2/4] Identifying report type and parsing
+2026-06-22 10:55:19 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser MonthlyCardParser
+2026-06-22 10:55:19 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:53] - Parsing report as TYPE_B
+2026-06-22 10:55:19 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:66] - TYPE_B produced 13 row(s)
+2026-06-22 10:55:19 - attendance_report.application.pipeline - INFO - [pipeline.py:47] - Parsed 13 row(s) as TYPE_B
+2026-06-22 10:55:19 - attendance_report.application.pipeline - INFO - [pipeline.py:49] - [3/4] Transforming with validation
+2026-06-22 10:55:19 - attendance_report.application.observers - INFO - [observers.py:40] - Transforming 13 row(s) as TYPE_B
+2026-06-22 10:55:19 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [20/23]: 08:03->08:06, 11:03->11:03, total=2.95, 125%=0.0
+2026-06-22 10:55:19 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 20/23: 08:03-11:03 -> 08:06-11:03
+2026-06-22 10:55:19 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [31/23]: 08:04->08:04, 10:57->10:54, total=2.83, 125%=0.0
+2026-06-22 10:55:19 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 31/23: 08:04-10:57 -> 08:04-10:54
+2026-06-22 10:55:19 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [4/1/23]: 08:01->08:04, 10:59->10:56, total=2.87, 125%=0.0
+2026-06-22 10:55:19 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 4/1/23: 08:01-10:59 -> 08:04-10:56
+2026-06-22 10:55:19 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [40/1/23]: 08:03->08:06, 11:01->10:55, total=2.82, 125%=0.0
+2026-06-22 10:55:19 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 40/1/23: 08:03-11:01 -> 08:06-10:55
+2026-06-22 10:55:19 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [14/1/23]: 08:00->08:02, 11:02->11:00, total=2.97, 125%=0.0
+2026-06-22 10:55:19 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 14/1/23: 08:00-11:02 -> 08:02-11:00
+2026-06-22 10:55:19 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [68/23]: 08:02->08:05, 11:08->11:03, total=2.97, 125%=0.0
+2026-06-22 10:55:19 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 68/23: 08:02-11:08 -> 08:05-11:03
+2026-06-22 10:55:19 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [17/1/23]: 08:00->08:01, 11:01->10:59, total=2.97, 125%=0.0
+2026-06-22 10:55:19 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 17/1/23: 08:00-11:01 -> 08:01-10:59
+2026-06-22 10:55:19 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [18/1/23]: 08:01->08:01, 11:02->10:57, total=2.93, 125%=0.0
+2026-06-22 10:55:19 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 18/1/23: 08:01-11:02 -> 08:01-10:57
+2026-06-22 10:55:19 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [19/1/23]: 08:06->08:09, 11:02->11:02, total=2.88, 125%=0.0
+2026-06-22 10:55:19 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 19/1/23: 08:06-11:02 -> 08:09-11:02
+2026-06-22 10:55:19 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [22/1/23]: 08:02->08:03, 11:03->10:57, total=2.9, 125%=0.0
+2026-06-22 10:55:19 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 22/1/23: 08:02-11:03 -> 08:03-10:57
+2026-06-22 10:55:19 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [26/1/23]: 08:02->08:04, 11:00->10:58, total=2.9, 125%=0.0
+2026-06-22 10:55:19 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 26/1/23: 08:02-11:00 -> 08:04-10:58
+2026-06-22 10:55:19 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [29/0/23]: 08:01->08:01, 11:03->10:59, total=2.97, 125%=0.0
+2026-06-22 10:55:19 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 29/0/23: 08:01-11:03 -> 08:01-10:59
+2026-06-22 10:55:19 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [00/23]: 08:00->08:04, 01:10->01:06, total=0.0, 125%=0.0
+2026-06-22 10:55:19 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 00/23: exit 01:06 not after entry 08:04 on 00/23 — keeping original
+2026-06-22 10:55:19 - attendance_report.application.observers - INFO - [observers.py:58] - Transformation complete: 13 row(s)
+2026-06-22 10:55:19 - attendance_report.application.pipeline - INFO - [pipeline.py:53] - [4/4] Rendering output PDF
+2026-06-22 10:55:19 - attendance_report.infrastructure.pdf_generator - INFO - [pdf_generator.py:58] - Generating PDF for TYPE_B -> data/output\modified_n_r_10_n.pdf
+2026-06-22 10:55:20 - attendance_report.infrastructure.pdf_generator - INFO - [pdf_generator.py:78] - PDF generated: data/output\modified_n_r_10_n.pdf
+2026-06-22 10:55:20 - attendance_report.application.pipeline - INFO - [pipeline.py:63] - Done -> data/output\modified_n_r_10_n.pdf
+2026-06-22 10:55:20 - attendance_report.application.pipeline - INFO - [pipeline.py:38] - Processing: n_r_5_n.pdf
+2026-06-22 10:55:20 - attendance_report.application.pipeline - INFO - [pipeline.py:41] - [1/4] OCR — extracting text
+2026-06-22 10:55:20 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:46] - Starting OCR for: n_r_5_n.pdf
+2026-06-22 10:55:21 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:49] - Converted PDF to 1 page(s)
+2026-06-22 10:55:21 - pytesseract - DEBUG - [pytesseract.py:272] - ['tesseract', 'C:\\Users\\TZADY\\AppData\\Local\\Temp\\tess_fso01bub_input.PNG', 'C:\\Users\\TZADY\\AppData\\Local\\Temp\\tess_fso01bub', '-l', 'heb+eng', '--psm', '6', 'txt']
+2026-06-22 10:55:26 - attendance_report.infrastructure.ocr_service - DEBUG - [ocr_service.py:57] - Page 1: 1160 chars
+2026-06-22 10:55:26 - attendance_report.infrastructure.ocr_service - INFO - [ocr_service.py:61] - OCR complete: 1176 chars
+2026-06-22 10:55:26 - attendance_report.application.pipeline - INFO - [pipeline.py:44] - [2/4] Identifying report type and parsing
+2026-06-22 10:55:26 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser MonthlyCardParser
+2026-06-22 10:55:26 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:53] - Parsing report as TYPE_B
+2026-06-22 10:55:26 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:66] - TYPE_B produced 20 row(s)
+2026-06-22 10:55:26 - attendance_report.application.pipeline - INFO - [pipeline.py:47] - Parsed 20 row(s) as TYPE_B
+2026-06-22 10:55:26 - attendance_report.application.pipeline - INFO - [pipeline.py:49] - [3/4] Transforming with validation
+2026-06-22 10:55:26 - attendance_report.application.observers - INFO - [observers.py:40] - Transforming 20 row(s) as TYPE_B
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [1/9/22]: 08:30->08:31, 12:00->11:54, total=3.38, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 1/9/22: 08:30-12:00 -> 08:31-11:54
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [2/9/22]: 08:30->08:34, 12:00->11:55, total=3.35, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 2/9/22: 08:30-12:00 -> 08:34-11:55
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [6/9/22]: 08:30->08:33, 12:00->11:57, total=3.4, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 6/9/22: 08:30-12:00 -> 08:33-11:57
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [7/9/22]: 08:30->08:31, 12:00->11:55, total=3.4, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 7/9/22: 08:30-12:00 -> 08:31-11:55
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [9/9/22]: 08:30->08:32, 12:00->11:57, total=3.42, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 9/9/22: 08:30-12:00 -> 08:32-11:57
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [11/9/22]: 08:30->08:33, 12:00->11:59, total=3.43, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 11/9/22: 08:30-12:00 -> 08:33-11:59
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [12/9/22]: 08:30->08:33, 12:00->11:56, total=3.38, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 12/9/22: 08:30-12:00 -> 08:33-11:56
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [13/9/22]: 08:30->08:35, 12:00->11:58, total=3.38, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 13/9/22: 08:30-12:00 -> 08:35-11:58
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [14/9/22]: 05:50->05:55, 12:00->12:00, total=6.08, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 14/9/22: 05:50-12:00 -> 05:55-12:00
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [15/9/22]: 08:30->08:35, 12:00->11:59, total=3.4, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 15/9/22: 08:30-12:00 -> 08:35-11:59
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [16/9/22]: 08:30->08:35, 12:00->11:55, total=3.33, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 16/9/22: 08:30-12:00 -> 08:35-11:55
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [18/9/22]: 08:30->08:30, 12:00->11:55, total=3.42, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 18/9/22: 08:30-12:00 -> 08:30-11:55
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [19/9/22]: 03:50->03:52, 12:00->11:56, total=8.07, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - WARNING - [observers.py:55] - Validation failed on 19/9/22: entry 03:52 outside [05:00, 11:00] on 19/9/22 — keeping original
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [20/9/22]: 08:30->08:32, 12:00->11:57, total=3.42, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 20/9/22: 08:30-12:00 -> 08:32-11:57
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [21/9/22]: 08:30->08:32, 12:00->11:57, total=3.42, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 21/9/22: 08:30-12:00 -> 08:32-11:57
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [22/9/22]: 08:30->08:34, 12:00->11:56, total=3.37, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 22/9/22: 08:30-12:00 -> 08:34-11:56
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [23/9/22]: 08:30->08:35, 12:00->11:56, total=3.35, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 23/9/22: 08:30-12:00 -> 08:35-11:56
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [25/9/22]: 08:30->08:31, 12:00->11:56, total=3.42, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 25/9/22: 08:30-12:00 -> 08:31-11:56
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [28/9/22]: 08:30->08:35, 12:00->11:56, total=3.35, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 28/9/22: 08:30-12:00 -> 08:35-11:56
+2026-06-22 10:55:26 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [30/9/22]: 08:30->08:31, 12:00->11:57, total=3.43, 125%=0.0
+2026-06-22 10:55:26 - attendance_report.application.observers - DEBUG - [observers.py:45] - Row 30/9/22: 08:30-12:00 -> 08:31-11:57
+2026-06-22 10:55:26 - attendance_report.application.observers - INFO - [observers.py:58] - Transformation complete: 20 row(s)
+2026-06-22 10:55:26 - attendance_report.application.pipeline - INFO - [pipeline.py:53] - [4/4] Rendering output PDF
+2026-06-22 10:55:26 - attendance_report.infrastructure.pdf_generator - INFO - [pdf_generator.py:58] - Generating PDF for TYPE_B -> data/output\modified_n_r_5_n.pdf
+2026-06-22 10:55:26 - attendance_report.infrastructure.pdf_generator - INFO - [pdf_generator.py:78] - PDF generated: data/output\modified_n_r_5_n.pdf
+2026-06-22 10:55:26 - attendance_report.application.pipeline - INFO - [pipeline.py:63] - Done -> data/output\modified_n_r_5_n.pdf
+2026-06-22 10:55:26 - attendance_report.cli - INFO - [cli.py:118] - All files processed
+2026-06-22 10:56:55 - attendance_report.cli - INFO - [cli.py:102] - ============================================================
+2026-06-22 10:56:55 - attendance_report.cli - INFO - [cli.py:103] - Attendance Report Generator
+2026-06-22 10:56:55 - attendance_report.cli - INFO - [cli.py:104] - ============================================================
+2026-06-22 10:56:55 - attendance_report.cli - INFO - [cli.py:118] - All files processed
+2026-06-22 10:56:55 - attendance_report.cli - INFO - [cli.py:102] - ============================================================
+2026-06-22 10:56:55 - attendance_report.cli - INFO - [cli.py:103] - Attendance Report Generator
+2026-06-22 10:56:55 - attendance_report.cli - INFO - [cli.py:104] - ============================================================
+2026-06-22 10:56:55 - attendance_report.cli - ERROR - [cli.py:109] - Input file not found: C:\Users\TZADY\AppData\Local\Temp\pytest-of-TZADY\pytest-1\test_missing_file_returns_erro0\nope.pdf
+2026-06-22 10:56:55 - attendance_report.cli - INFO - [cli.py:102] - ============================================================
+2026-06-22 10:56:55 - attendance_report.cli - INFO - [cli.py:103] - Attendance Report Generator
+2026-06-22 10:56:55 - attendance_report.cli - INFO - [cli.py:104] - ============================================================
+2026-06-22 10:56:55 - attendance_report.cli - INFO - [cli.py:83] - Found 2 PDF file(s)
+2026-06-22 10:56:55 - attendance_report.cli - INFO - [cli.py:118] - All files processed
+2026-06-22 10:56:55 - attendance_report.cli - INFO - [cli.py:102] - ============================================================
+2026-06-22 10:56:55 - attendance_report.cli - INFO - [cli.py:103] - Attendance Report Generator
+2026-06-22 10:56:55 - attendance_report.cli - INFO - [cli.py:104] - ============================================================
+2026-06-22 10:56:55 - attendance_report.cli - WARNING - [cli.py:81] - No PDF files found in C:\Users\TZADY\AppData\Local\Temp\pytest-of-TZADY\pytest-1\test_batch_mode_no_files0\empty
+2026-06-22 10:56:55 - attendance_report.cli - INFO - [cli.py:118] - All files processed
+2026-06-22 10:56:55 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser EagleReportParser
+2026-06-22 10:56:55 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser MonthlyCardParser
+2026-06-22 10:56:55 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser EagleReportParser
+2026-06-22 10:56:55 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser EagleReportParser
+2026-06-22 10:56:55 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:53] - Parsing report as TYPE_A
+2026-06-22 10:56:55 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:66] - TYPE_A produced 3 row(s)
+2026-06-22 10:56:55 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:53] - Parsing report as TYPE_B
+2026-06-22 10:56:55 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:66] - TYPE_B produced 2 row(s)
+2026-06-22 10:56:55 - attendance_report.application.service - WARNING - [service.py:42] - No strategy for 'TYPE_X' — returning rows unchanged
+2026-06-22 10:56:55 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [01/05/2024]: 08:00->08:04, 17:00->16:56, total=8.87
+2026-06-22 10:56:55 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [01/05/2024]: 08:00->08:04, 17:00->16:56, total=8.87
+2026-06-22 10:56:55 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [01/05/2024]: 08:00->08:03, 17:00->16:59, total=8.93
+2026-06-22 10:56:55 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [01/05/2024]: 08:00->08:03, 17:00->16:59, total=8.93
+2026-06-22 10:56:55 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [01/05/2024]: 08:00->08:03, 17:00->16:59, total=8.93
+2026-06-22 10:56:55 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [15/06/2024]: 08:00->08:00, 17:00->16:59, total=8.98
+2026-06-22 10:56:55 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [01/05/2024]: 07:00->07:02, 19:00->18:55, total=11.88, 125%=2.0
+2026-06-22 10:58:27 - attendance_report.cli - INFO - [cli.py:102] - ============================================================
+2026-06-22 10:58:27 - attendance_report.cli - INFO - [cli.py:103] - Attendance Report Generator
+2026-06-22 10:58:27 - attendance_report.cli - INFO - [cli.py:104] - ============================================================
+2026-06-22 10:58:27 - attendance_report.cli - INFO - [cli.py:118] - All files processed
+2026-06-22 10:58:27 - attendance_report.cli - INFO - [cli.py:102] - ============================================================
+2026-06-22 10:58:27 - attendance_report.cli - INFO - [cli.py:103] - Attendance Report Generator
+2026-06-22 10:58:27 - attendance_report.cli - INFO - [cli.py:104] - ============================================================
+2026-06-22 10:58:27 - attendance_report.cli - ERROR - [cli.py:109] - Input file not found: C:\Users\TZADY\AppData\Local\Temp\pytest-of-TZADY\pytest-2\test_missing_file_returns_erro0\nope.pdf
+2026-06-22 10:58:27 - attendance_report.cli - INFO - [cli.py:102] - ============================================================
+2026-06-22 10:58:27 - attendance_report.cli - INFO - [cli.py:103] - Attendance Report Generator
+2026-06-22 10:58:27 - attendance_report.cli - INFO - [cli.py:104] - ============================================================
+2026-06-22 10:58:27 - attendance_report.cli - INFO - [cli.py:83] - Found 2 PDF file(s)
+2026-06-22 10:58:27 - attendance_report.cli - INFO - [cli.py:118] - All files processed
+2026-06-22 10:58:27 - attendance_report.cli - INFO - [cli.py:102] - ============================================================
+2026-06-22 10:58:27 - attendance_report.cli - INFO - [cli.py:103] - Attendance Report Generator
+2026-06-22 10:58:27 - attendance_report.cli - INFO - [cli.py:104] - ============================================================
+2026-06-22 10:58:27 - attendance_report.cli - WARNING - [cli.py:81] - No PDF files found in C:\Users\TZADY\AppData\Local\Temp\pytest-of-TZADY\pytest-2\test_batch_mode_no_files0\empty
+2026-06-22 10:58:27 - attendance_report.cli - INFO - [cli.py:118] - All files processed
+2026-06-22 10:58:27 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser EagleReportParser
+2026-06-22 10:58:27 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser MonthlyCardParser
+2026-06-22 10:58:27 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser EagleReportParser
+2026-06-22 10:58:27 - attendance_report.application.parsing.factory - INFO - [factory.py:54] - Selected parser EagleReportParser
+2026-06-22 10:58:27 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:53] - Parsing report as TYPE_A
+2026-06-22 10:58:27 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:66] - TYPE_A produced 3 row(s)
+2026-06-22 10:58:27 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:53] - Parsing report as TYPE_B
+2026-06-22 10:58:27 - attendance_report.application.parsing.base_parser - INFO - [base_parser.py:66] - TYPE_B produced 2 row(s)
+2026-06-22 10:58:27 - attendance_report.application.service - WARNING - [service.py:42] - No strategy for 'TYPE_X' — returning rows unchanged
+2026-06-22 10:58:28 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [01/05/2024]: 08:00->08:04, 17:00->16:56, total=8.87
+2026-06-22 10:58:28 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [01/05/2024]: 08:00->08:04, 17:00->16:56, total=8.87
+2026-06-22 10:58:28 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [01/05/2024]: 08:00->08:03, 17:00->16:59, total=8.93
+2026-06-22 10:58:28 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [01/05/2024]: 08:00->08:03, 17:00->16:59, total=8.93
+2026-06-22 10:58:28 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [01/05/2024]: 08:00->08:03, 17:00->16:59, total=8.93
+2026-06-22 10:58:28 - attendance_report.application.transformation.type_a - DEBUG - [type_a.py:40] - TYPE_A [15/06/2024]: 08:00->08:00, 17:00->16:59, total=8.98
+2026-06-22 10:58:28 - attendance_report.application.transformation.type_b - DEBUG - [type_b.py:44] - TYPE_B [01/05/2024]: 07:00->07:02, 19:00->18:55, total=11.88, 125%=2.0

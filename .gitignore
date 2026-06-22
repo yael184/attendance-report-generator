@@ -2,3 +2,14 @@
 .venv-1/
 __pycache__/
 *.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+data/output/
+logs/
+*.log

@@ -1,103 +1,118 @@
 # Attendance Report Variation System 📊
 
-This project was developed as part of a home assignment for a student position. The goal is to process scanned PDF attendance reports, identify the report type, apply deterministic variations to the working hours, and generate a new PDF that preserves the original layout and structure.
+Process scanned PDF attendance reports, identify the report type via OCR, apply
+**deterministic** per-row variations to the working hours, and generate a new
+PDF that mirrors the original layout.
 
-## 🚀 Key Features
-
-- **Automatic Report Identification**: Uses OCR and Strategy Design Pattern to distinguish between different report formats.
-- **Deterministic Logic**: Applies "human-like" variations to entry/exit times while ensuring logical consistency (Exit > Entry) and consistency across the same file.
-- **OCR Integration**: Processes scanned documents using Tesseract OCR and PDF-to-Image conversion.
-- **HTML-based PDF Generation**: Utilizes Jinja2 templates to create professional-looking PDFs that mimic the original layout.
-
-## 🏗️ Architecture & Design Patterns
-
-The project follows **Clean Architecture** principles to ensure maintainability and scalability:
-
-- **Strategy Pattern**: Used to encapsulate the parsing logic for different report types. Adding a new report format only requires adding a new strategy class.
-- **Layered Architecture**: 
-  - `core`: Domain models and business logic (variation engine).
-  - `processors`: Strategy implementations and data extraction.
-  - `services`: Infrastructure services (OCR, PDF Generation).
-  - `templates`: Visual representation (HTML/CSS).
-
-## 📁 Project Structure
-
-```text
-attendance_project/
-├── main.py                 # Application orchestrator
-├── requirements.txt        # Python dependencies
-├── core/                   # Logic & Models
-│   ├── models.py           # Unified data structures
-│   └── variation_logic.py  # Deterministic variation engine
-├── processors/             # Parsing Strategies
-│   ├── base_strategy.py    # Strategy Interface
-│   ├── eagle_strategy.py   # Strategy for "Eagle" reports
-│   └── monthly_strategy.py # Strategy for "Monthly Card" reports
-├── services/               # Infrastructure
-│   ├── ocr_service.py      # Tesseract & PDF processing
-│   └── pdf_generator.py    # HTML to PDF conversion
-├── templates/              # HTML Templates (Jinja2)
-└── data/                   # Input/Output folders
-```
-## 🛠️ Prerequisites
-Before running the project, ensure you have the following system dependencies installed:
-
-- **Tesseract OCR**: Required for text extraction from images.  
-- **Poppler**: Required for converting PDF pages to images.  
-- **wkhtmltopdf**: Required for converting HTML templates to PDF.  
+Built as a teaching project to demonstrate **Clean Architecture** and a set of
+classic **design patterns** working together on a real, end-to-end task.
 
 ---
 
-## 💻 Installation & Setup
+## 🏗️ Architecture
 
-### Clone the repository:
+Dependencies always flow **inwards** — the domain knows nothing about OCR, PDF
+libraries or the CLI. Infrastructure implements ports declared by the
+application; the composition root (`container.py`) is the only place that wires
+concrete adapters together.
+
+```text
+src/attendance_report/
+├── domain/                 # Pure business core (no I/O, no frameworks)
+│   ├── models.py           #   frozen dataclasses (the unified model)
+│   ├── rules.py            #   frozen VariantRules + RULES_REGISTRY
+│   ├── exceptions.py       #   AttendanceError hierarchy
+│   └── time_utils.py       #   pure time parsing/normalisation
+├── application/            # Use cases + design patterns (depends on domain)
+│   ├── interfaces.py       #   ports: OCRPort, PDFRendererPort
+│   ├── parsing/            #   Template Method + Strategy + Factory/Registry
+│   ├── transformation/     #   Strategy + Decorator + Factory + per-row seed
+│   ├── observers.py        #   Observer pattern
+│   ├── service.py          #   TransformationService (Observer subject)
+│   └── pipeline.py         #   end-to-end use case
+├── infrastructure/         # Adapters (implement the ports)
+│   ├── ocr_service.py      #   Tesseract + pdf2image
+│   ├── pdf_generator.py    #   Jinja2 + wkhtmltopdf
+│   └── logging_config.py
+├── container.py            # Composition root / DI container
+└── cli.py                  # argparse entry point
+tests/
+├── unit/                   # fast, no system tools required
+└── integration/            # pipeline tests (fakes) + 1 real end-to-end test
+```
+
+## 🎯 Design patterns used
+
+| Pattern             | Where                                                            |
+| ------------------- | --------------------------------------------------------------- |
+| **Strategy**        | parsers (`*_parser.py`) and transformations (`type_a/type_b`)   |
+| **Template Method** | `BaseReportParser.parse` defines the skeleton; subclasses fill hooks |
+| **Factory**         | `ParserFactory`, `StrategyFactory` — *create* by type           |
+| **Registry**        | self-registration via `@ParserFactory.register` / `RULES_REGISTRY` |
+| **Decorator**       | `ValidatingStrategyDecorator` wraps any strategy (or decorator) |
+| **Observer**        | `TransformationService` notifies `LoggingObserver` etc.         |
+| **Dependency Injection** | `Container` builds the whole object graph in one place      |
+
+Adding a **third report type** means writing one parser class and one strategy
+class — both self-register, and *no existing file changes* (Open/Closed).
+
+## 🔑 Key engineering choices
+
+- **Unified model** — both report formats normalise into the same frozen
+  `AttendanceRow`; only the parser and the strategy are variant-specific.
+- **Immutability** — every domain object is `frozen=True`; transformations
+  return new rows via `dataclasses.replace`, never mutate.
+- **Deterministic per-row randomness** — the seed is derived from the filename
+  *and* each row's date, so output is reproducible and individually testable.
+- **Centralised rules** — all thresholds live in `domain/rules.py`; changing a
+  rule is a one-line edit.
+- **Typed** — passes `mypy --strict`.
+
+---
+
+## 🛠️ Prerequisites
+
+- **Python 3.10+**
+- **Tesseract OCR** (+ Hebrew language pack) — text extraction
+- **Poppler** — PDF → image conversion
+- **wkhtmltopdf** — HTML → PDF rendering
+
+> With Docker, none of the system tools need to be installed locally — they are
+> bundled in the image.
+
+## 💻 Installation
+
 ```bash
-git clone <repository-url>
-cd attendance_project
+pip install -r requirements.txt        # runtime only
+# or, for development (tests + type checking):
+pip install -e ".[dev]"
 ```
 
-## 📦 Install Python dependencies
+## 🏃 Running
 
-``` bash
-pip install -r requirements.txt
+```bash
+python main.py                 # batch: process every PDF in data/input/
+python main.py report.pdf -o out/   # single file
+python -m attendance_report -h      # full help
 ```
 
-## ⚙️ Configure Tesseract path (Optional)
+See **[USAGE.md](USAGE.md)** for the complete CLI reference, Docker instructions
+and troubleshooting.
 
-If Tesseract is not in your system's PATH, update the path in:
+## 🐳 Docker
 
-    services/ocr_service.py
-
-## 🏃 How to Run
-
-1.  Place your scanned PDF files in the `data/input/` directory.
-
-2.  Execute the main script:
-
-``` bash
-python main.py
+```bash
+docker build -t attendance-report .
+docker run --rm -v "C:\samples:/data" attendance-report -o /data/output/
 ```
 
-3.  Find the modified reports in the `data/output/` directory.
+## ✅ Tests & quality
 
-## 🧠 The Logic Behind Variations
+```bash
+pytest --cov          # unit + integration, ~89% coverage
+mypy --strict src/attendance_report
+```
 
-The system uses a **Hash-based Seeding mechanism**.\
-By hashing the filename, the `VariationEngine` generates an offset
-(*jitter*) that is:
-
--   Unique to the file\
--   Consistent across runs for the same file
-
-This ensures:
-
--   **Reliability** -- Total hours remain within a reasonable
-    daily/monthly range\
--   **Validity** -- Exit time is always verified to be later than the
-    entry time\
--   **Human Touch** -- Small, non-rounded additions/subtractions to the
-    times
-
-------------------------------------------------------------------------
+---
 
 *Developed as a home assignment for a Student Position.*

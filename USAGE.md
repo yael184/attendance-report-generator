@@ -87,18 +87,47 @@ python main.py
 
 Output is written to `data/output/` by default.
 
+You can also run it as a module:
+
+```bash
+python -m attendance_report            # batch mode
+python -m attendance_report report.pdf # single file
+```
+
 ### Full argument reference
 
 ```text
-usage: main.py [-h] [-o OUTPUT_DIR] [input]
+usage: attendance-report [-h] [-o DIR] [-i DIR] [--template-dir DIR]
+                         [--tesseract-path PATH] [-v] [INPUT]
 
 positional arguments:
-  input                 Path to input PDF. Omit to batch-process data/input/
+  INPUT                 Path to a single input PDF. If omitted, batch-process --input-dir.
 
 options:
-  -o, --output-dir      Output directory (default: data/output)
-  -h, --help            Show this help message and exit
+  -o, --output-dir DIR     Directory for output PDF(s) (default: data/output)
+  -i, --input-dir DIR      Directory scanned in batch mode (default: data/input)
+  --template-dir DIR       Directory holding the Jinja2 templates (default: templates)
+  --tesseract-path PATH    Explicit path to the tesseract binary (if not on PATH)
+  -v, --verbose            Enable DEBUG logging on the console
+  -h, --help               Show this help message and exit
 ```
+
+---
+
+## Development & testing
+
+```bash
+pip install -e ".[dev]"      # install with dev extras (pytest, mypy)
+pytest                       # run unit + integration tests
+pytest --cov                 # with coverage report
+pytest -m "not integration"  # unit tests only (no system tools needed)
+mypy --strict src/attendance_report
+```
+
+The integration tests use in-memory fakes for OCR/PDF, so they run anywhere.
+One real end-to-end test (`tests/integration/test_real_pipeline.py`) exercises
+the actual OCR + PDF stack and skips automatically when the system tools are
+absent.
 
 ---
 
@@ -129,7 +158,10 @@ PDF file
   ▼  PDFGenerator (wkhtmltopdf + Jinja2 template) → modified_<name>.pdf
 ```
 
-Transformations are **deterministic**: the same input file always produces the same output, because the random seed is derived from the filename via MD5.
+Transformations are **deterministic at the row level**: a per-row seed is
+derived from the input filename *and* the row's date, so the same file always
+produces the same output and each day varies independently (which is what makes
+the transformation unit-testable).
 
 ---
 
